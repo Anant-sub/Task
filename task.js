@@ -8,7 +8,6 @@ fs.readFile("input.txt", (err,data) => {
     const arr = data_str.split('\n');
     for(var i = 0; i < arr.length; i++){
     const cur = arr[i];
-    // console.log(cur);
     var num = "";
     for(var j = 0; j < cur.length; j++){
         if(cur[j] >= '0' && cur[j] <= '9'){
@@ -26,5 +25,3 @@ fs.readFile("input.txt", (err,data) => {
     }
     console.log(answer);
 });
-// console.log(arr);
-// var answer = 0;
