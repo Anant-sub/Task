@@ -27,7 +27,8 @@ fs.readFile("input.txt", (err,data) => {
     }
     let answer = 0;
     const data_str = data.toString();
+
     const arr = data_str.split('\n');
-    console.log(helper(arr));
+    console.log("Answer: " +  helper(arr));
 });
 
