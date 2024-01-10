@@ -3,6 +3,9 @@ fs.readFile("input.txt", (err,data) => {
     if(err){
         console.err(err);
     }
+
+
+    
     var answer = 0;
     const data_str = data.toString();
     const arr = data_str.split('\n');
@@ -25,3 +28,4 @@ fs.readFile("input.txt", (err,data) => {
     }
     console.log(answer);
 });
+ 
