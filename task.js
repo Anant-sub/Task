@@ -1,7 +1,4 @@
 const fs =  require("fs");
-
-
-
 function helper(arr){
     var answer = 0;
     for(var i = 0; i < arr.length; i++){
@@ -23,12 +20,14 @@ function helper(arr){
         }
     return answer;
 }
+
 fs.readFile("input.txt", (err,data) => {
     if(err){
         console.err(err);
     }
-    var answer = 0;
+    let answer = 0;
     const data_str = data.toString();
     const arr = data_str.split('\n');
     console.log(helper(arr));
 });
+
