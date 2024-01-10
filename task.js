@@ -1,4 +1,6 @@
 const fs =  require("fs");
+
+
 function helper(arr){
     var answer = 0;
     for(var i = 0; i < arr.length; i++){
