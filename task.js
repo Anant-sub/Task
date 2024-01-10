@@ -4,8 +4,7 @@ fs.readFile("input.txt", (err,data) => {
         console.err(err);
     }
 
-
-    
+    // To store the sum for all strings
     var answer = 0;
     const data_str = data.toString();
     const arr = data_str.split('\n');
